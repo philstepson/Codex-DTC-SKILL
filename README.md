@@ -11,6 +11,8 @@ Repository location:
 ## Contents
 
 - `skills/nexus-dtc-execute/` - Codex skill for authenticated Nexus DTC Execute browser workflows.
+- `CONTRIBUTING.md` - branch, validation, and push protocol for collaborators.
+- `scenarios/validated-scenarios.md` - record of successful skill exercises and scenario learnings.
 
 ## Install Or Refresh Live Skill
 
@@ -31,3 +33,9 @@ Use the Nexus DTC Execute skill to update this engagement from the in-app browse
 ```
 
 The skill covers browser navigation, EA versus sales boundaries, opportunity linking, progress milestones, status wording, and verification after writes.
+
+## Collaboration
+
+Before asking Codex to push changes, review `CONTRIBUTING.md`.
+
+Use scenario branches for skill refinements, record successful workflow learnings in `scenarios/validated-scenarios.md`, and keep `main` as the reviewed source of truth.

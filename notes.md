@@ -2,6 +2,7 @@
 
 ## Review Before Push
 
+- Review `CONTRIBUTING.md` before any Git push request.
 - Review the skill source in `/Users/PWSTEPHE/codex/DTC-Skill`.
 - Confirm the Nexus DTC Execute workflow reflects the AM/NS Calvert engagement update pattern.
 - Adjust wording or procedure details before publishing to GitHub.
@@ -9,10 +10,12 @@
 
 ## Push Plan
 
-1. Add the GitHub remote.
-2. Verify `git status` is clean or commit any review edits.
-3. Push `main` to the remote.
-4. Confirm the GitHub repository URL.
+1. Verify the current branch with `git status --short --branch`.
+2. Use a `scenario/<short-name>` branch for behavior changes from real DTC workflows.
+3. Record successful learnings in `scenarios/validated-scenarios.md`.
+4. Commit reviewed edits with a specific message.
+5. Push the intended branch to the remote.
+6. Confirm the GitHub repository URL or pull request path.
 
 ## Installed Skill Copy
 
