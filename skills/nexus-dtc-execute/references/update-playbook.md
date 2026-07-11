@@ -45,6 +45,39 @@ Confirm with the user before clicking `Add Opportunity "<opp_id>" Link`. After a
 
 Do not remove old closed opportunities unless the user explicitly asks. Historical links can remain for continuity.
 
+### Missing Opportunity Escalation
+
+When an exact opportunity ID is not visible in DTC:
+
+1. Verify the opportunity directly in Oracle Sales and capture its account, title, status/stage, owning Cloud Sales representative/CPR, and owner email.
+2. Recheck the DTC opportunity-link drawer using the exact opportunity ID, the correct focused account, `Limit to Open / Won / Pending: Yes`, `Limit to Valid Opps: Yes`, and the appropriate registry/global-ultimate scope.
+3. If it is still absent, stop the link attempt. Do not create a replacement opportunity or attach a different opportunity.
+4. Draft an email to the owning Sales representative/CPR using this pattern:
+
+```text
+Subject: Action needed: Add opportunity <opp_id> to Nexus DTC Execute
+
+Hi <sales_owner>,
+
+Opportunity <opp_id> ("<opportunity_title>") is not currently visible in Nexus DTC Execute for <account>, so it cannot be linked to the intended engagement.
+
+Nexus DTC Execute:
+<home_page_url_from_navigation.md>
+
+Account: <account>
+Opportunity ID: <opp_id>
+DTC engagement ID: <engagement_id_if_known>
+Engagement type: <engagement_type_if_known>
+Engagement owner: <engagement_owner_if_known>
+
+Please open Opportunity Review, search for the exact opportunity ID, confirm the Oracle Sales account/registry and Data Platform territory assignments, allow the integration to synchronize if corrections are needed, and pre-connect or link the opportunity. Please notify the EA when it is visible and linked.
+```
+
+5. Obtain action-time confirmation before sending the email.
+6. Leave the DTC workflow staged without fabricating a successful link. Resume after Sales/CPR confirms the opportunity is visible.
+7. Once visible, have the EA create or select the appropriate engagement, link the opportunity, and maintain the technical engagement until the opportunity closes or the effort ends.
+8. Prefer updating and sending the reviewed Outlook draft. If the connector cannot update or delete a superseded draft, send the approved corrected message and explicitly identify the stale draft for manual deletion.
+
 ## Progress And Milestones
 
 Open `Engagement Progress` from page 647. Page 352 uses checkbox milestones grouped by phase.

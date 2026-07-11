@@ -1,4 +1,4 @@
 interface:
   display_name: "Nexus DTC Execute"
-  short_description: "Guide DTC Execute engagement updates in Oracle APEX."
-  default_prompt: "Help me update a Nexus DTC Execute engagement from the authenticated browser session."
+  short_description: "Run authenticated DTC engagement and opportunity workflows."
+  default_prompt: "Use the Nexus DTC Execute workflow to verify prerequisites, locate the opportunity or engagement, enforce Sales and EA ownership boundaries, stage updates, and verify every approved write."

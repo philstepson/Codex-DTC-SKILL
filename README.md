@@ -26,13 +26,17 @@ Future Codex sessions should then discover the skill as `nexus-dtc-execute`.
 
 ## Typical Use
 
-Ask Codex to use the Nexus DTC Execute skill while the authenticated Oracle APEX page is open:
+Ask Codex to use the Nexus DTC Execute skill while the authenticated DTC-Nexus home page is open:
 
 ```text
 Use the Nexus DTC Execute skill to update this engagement from the in-app browser.
 ```
 
-The skill covers browser navigation, EA versus sales boundaries, opportunity linking, progress milestones, status wording, and verification after writes.
+On invocation, the skill first confirms both that browser control is available and that this specific Codex invocation exposes a controllable browser tab. An installed plugin alone is not enough—CLI sessions can have zero browser targets. Only after the tab is authenticated and open on the DTC-Nexus home page does the skill ask for one engagement search hint: an Engagement ID, Opportunity ID, SR number, or Account / customer name.
+
+The skill covers Python dependency preflight, authenticated in-app or explicitly approved Chrome handoff, browser navigation, EA versus Sales/CPR ownership boundaries, opportunity linking, missing-opportunity email escalation, progress milestones, status wording, and verification after writes.
+
+When an opportunity is missing from DTC, the owning Cloud Sales representative/CPR initiates the process by correcting account/registry and Data Platform territory assignments as needed and pre-connecting the opportunity. The EA then creates or selects the technical engagement and maintains it until the opportunity closes or the effort ends.
 
 ## Collaboration
 

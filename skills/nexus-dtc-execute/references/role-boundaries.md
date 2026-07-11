@@ -29,6 +29,8 @@ Sales-owned information should normally stay with the opportunity or sales syste
 - commercial agreement status unless a DTC field explicitly asks for a technical-commercial milestone
 - old opportunity cleanup unless the user explicitly confirms removal
 
+The owning Cloud Sales representative/CPR must initiate the process for an opportunity that is not visible in DTC. The sales owner must verify or correct the opportunity account/registry and Data Platform territory assignments in Oracle Sales, allow the integration to synchronize, and then pre-connect or link the opportunity in DTC. The EA must not create, imitate, or substitute the missing sales opportunity record.
+
 If a user tells you the account rep or opportunity owner, verify it in the opportunity drawer if possible, but do not overwrite unrelated sales fields from the engagement form.
 
 ## Ownership Nuance
@@ -41,3 +43,5 @@ Distinguish these concepts:
 - **Last updated by**: audit signal only; it does not necessarily mean formal ownership.
 
 If the engagement owner remains the prior person but the active opportunity and milestone work show the current user, explain that difference plainly.
+
+After Sales/CPR initiates the opportunity in DTC, the EA owns the technical engagement lifecycle: create or select the appropriate engagement, maintain the definition and technical progress, record blockers and artifacts, and keep it current until the linked opportunity closes or the technical effort is explicitly ended.

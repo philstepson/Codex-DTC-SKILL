@@ -40,3 +40,41 @@ What worked:
 Follow-up:
 - Use scenario branches for future engagement-specific refinements.
 - Add entries here when a colleague validates new scenarios.
+
+## 2026-07-10 - Invocation browser-target preflight
+
+Validated by: Phil
+Scenario: Invoke the Nexus DTC Execute skill from a Codex CLI session where the browser-control plugin is installed but no controllable browser tab is exposed.
+Changed files:
+- README.md
+- CONTRIBUTING.md
+- skills/nexus-dtc-execute/SKILL.md
+
+What worked:
+- The preflight distinguishes installed browser-control capability from an actual controllable browser target.
+- With zero browser targets, the skill stops before requesting a Nexus URL, search hint, or authentication action and reports the environment requirement plainly.
+
+Follow-up:
+- Re-test the same preflight from a browser-enabled Codex environment before performing live Nexus updates.
+
+## 2026-07-10 - Missing opportunity Sales escalation
+
+Validated by: Phil
+Scenario: Look up opportunity A9F6LF for KUBOTA USA INC, confirm it is absent from DTC, identify its Oracle Sales owner, and send the approved initiation instructions.
+Changed files:
+- README.md
+- CONTRIBUTING.md
+- skills/nexus-dtc-execute/SKILL.md
+- skills/nexus-dtc-execute/agents/openai.yaml
+- skills/nexus-dtc-execute/references/navigation.md
+- skills/nexus-dtc-execute/references/role-boundaries.md
+- skills/nexus-dtc-execute/references/update-playbook.md
+
+What worked:
+- The workflow verified the opportunity in Oracle Sales and identified the owning Sales representative/CPR.
+- The exact DTC lookup confirmed the opportunity was not visible without substituting another opportunity.
+- The approved email included the DTC home URL, opportunity and engagement identifiers, account/territory checks, synchronization guidance, and a request to notify the EA.
+- The workflow preserved the boundary that Sales initiates a missing opportunity and the EA maintains the technical engagement through closure or effort end.
+
+Follow-up:
+- Resume engagement 1279516 after Sales confirms A9F6LF is visible and linked in DTC.

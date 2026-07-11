@@ -54,7 +54,11 @@ Avoid vague messages like `updates` or `fixes`.
 Before committing a skill behavior change, confirm:
 
 - The skill still stops at MFA, biometric, or human approval boundaries.
+- Invocation confirms the in-app browser-control capability, at least one controllable browser tab in the current Codex environment, an authenticated DTC-Nexus home page, and one allowed engagement search hint before searching.
+- Invocation activates and verifies the `tools-311` Python environment and required libraries before browser work.
 - The workflow preserves EA versus sales role boundaries.
+- Missing opportunities are escalated to the owning Sales/CPR with the DTC link and complete initiation instructions; the EA never fabricates a replacement opportunity.
+- The EA lifecycle remains explicit: create or select the technical engagement after Sales initiation, then maintain it until the opportunity closes or the effort ends.
 - The update language does not make unsupported claims.
 - Missing or unclear Nexus data is stated plainly.
 - Only the intended engagement fields are updated.

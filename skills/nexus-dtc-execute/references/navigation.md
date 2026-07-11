@@ -2,7 +2,17 @@
 
 ## Browser And Auth
 
-Use the user's authenticated in-app browser session. Do not automate credentials or MFA. If the session expires, ask the user to reauthenticate and continue from the same app context.
+Always begin environment setup by opening this home page in the in-app browser:
+
+```text
+https://itfcuqba1dqacqh-dtcinnovate.adb.us-ashburn-1.oraclecloudapps.com/ords/f?p=303:1:106717273200473:HOME_CLICK::::
+```
+
+This is a prerequisite even when no DTC tab is already open. Use the resulting app session and generated navigation links for subsequent work.
+
+Use the user's authenticated in-app browser session by default. If the user explicitly identifies an already authenticated Chrome tab, complete the in-app home-page attempt, then use the Chrome-control skill to claim that exact tab and continue there. Do not switch browsers merely to bypass authentication.
+
+Do not automate credentials or MFA. If the selected session reaches an authentication boundary, ask the user to authenticate and continue from the same app context.
 
 Use the in-app browser control skill and `node_repl` browser API when available. After connecting, inspect the selected tab and verify the current URL, page title, focused engagement, visible rows, and open drawers.
 
