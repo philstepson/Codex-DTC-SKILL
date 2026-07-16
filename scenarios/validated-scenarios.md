@@ -78,3 +78,21 @@ What worked:
 
 Follow-up:
 - Resume engagement 1279516 after Sales confirms A9F6LF is visible and linked in DTC.
+
+## 2026-07-16 - KUBOTA DB@Azure technical engagement and status update
+
+Validated by: Phil
+Scenario: Locate DTC opportunity A9G9Z5 for KUBOTA USA INC, create a DP Multicloud Base engagement, and record an approved technical status update.
+Changed files:
+- scenarios/validated-scenarios.md
+- skills/nexus-dtc-execute/references/update-playbook.md
+
+What worked:
+- A9G9Z5 was visible in the DTC opportunity picker. A temporary `No data found` result was caused by the Opportunity Review report filters, not by a missing DTC opportunity.
+- The workflow created engagement `1289117`, **KUBOTA USA INC – DB@Azure Technical Engagement**, as `DP Multicloud Base` and linked it to A9G9Z5.
+- The creation form required a non-empty engagement description. Source was set to `Sales Driven Initiative` and segment to `Multicloud Driven`.
+- The approved technical update recorded the AI-based Lending and Leasing Dashboard demo simulation and its follow-on agentic predictive capability for potential bad loans and poor-collections factors, while leaving customer validation and production deployment open.
+- Applying the status update changed the engagement heat to Yellow. This was the app's automatic new-engagement status, not evidence of an open technical blocker.
+
+Follow-up:
+- Review the dashboard and predictive approach with the customer, validate priority use cases, data and integration needs, and success criteria before marking technical validation or onboarding milestones complete.

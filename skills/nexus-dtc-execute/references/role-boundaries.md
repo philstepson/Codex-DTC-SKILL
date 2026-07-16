@@ -29,7 +29,7 @@ Sales-owned information should normally stay with the opportunity or sales syste
 - commercial agreement status unless a DTC field explicitly asks for a technical-commercial milestone
 - old opportunity cleanup unless the user explicitly confirms removal
 
-The owning Cloud Sales representative/CPR must initiate the process for an opportunity that is not visible in DTC. The sales owner must verify or correct the opportunity account/registry and Data Platform territory assignments in Oracle Sales, allow the integration to synchronize, and then pre-connect or link the opportunity in DTC. The EA must not create, imitate, or substitute the missing sales opportunity record.
+When an opportunity is not visible in DTC, the user may create a DTC record derived from the verified Oracle Sales opportunity when its revenue amount is greater than zero. The DTC record must preserve the source opportunity and sales-owned values; it must not imitate, replace, or alter the sales opportunity. If the source opportunity has no positive revenue amount, or the app does not expose a DTC creation action, offer the owning Cloud Sales representative/CPR email path instead.
 
 If a user tells you the account rep or opportunity owner, verify it in the opportunity drawer if possible, but do not overwrite unrelated sales fields from the engagement form.
 
@@ -44,4 +44,4 @@ Distinguish these concepts:
 
 If the engagement owner remains the prior person but the active opportunity and milestone work show the current user, explain that difference plainly.
 
-After Sales/CPR initiates the opportunity in DTC, the EA owns the technical engagement lifecycle: create or select the appropriate engagement, maintain the definition and technical progress, record blockers and artifacts, and keep it current until the linked opportunity closes or the technical effort is explicitly ended.
+After a DTC opportunity record is created or becomes visible, the EA owns the technical engagement lifecycle: create or select the appropriate engagement, maintain the definition and technical progress, record blockers and artifacts, and keep it current until the linked opportunity closes or the technical effort is explicitly ended.

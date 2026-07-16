@@ -59,7 +59,7 @@ Verify the row is narrowed to exactly the intended engagement before editing. Ca
 Then update in this order:
 
 1. **Definition**: title, description, compelling business reason, source, segment, target dates where appropriate.
-2. **Opportunity links**: link the current opportunity ID and leave historical opportunities unless the user explicitly asks to remove them. If the opportunity is not visible in DTC, follow the missing-opportunity escalation in `references/update-playbook.md`; do not create or substitute a sales-owned opportunity record as the EA.
+2. **Opportunity links**: link the current opportunity ID and leave historical opportunities unless the user explicitly asks to remove them. If the opportunity is not visible in DTC, follow the missing-opportunity workflow in `references/update-playbook.md`: offer to create its DTC record before offering an email to Sales. Create only a DTC representation derived from the verified Oracle Sales opportunity, never a replacement sales opportunity.
 3. **Progress**: mark only the technical milestones supported by user-confirmed reality.
 4. **Status narrative/artifacts**: add status comments or artifacts only when the app exposes the correct surface and the user confirms the content.
 5. **Verification**: close drawers, refresh/read the main row, and report the app-visible result.
@@ -70,7 +70,7 @@ Do not overstate completion. If onboarding, implementation, technical proof, or 
 
 Do not change sales-owned data such as territory, opportunity owner, commercial stage, revenue forecast, or account-rep details unless the user explicitly asks and the app exposes the appropriate workflow.
 
-Require the owning Cloud Sales representative/CPR to initiate the DTC opportunity process when an opportunity is missing. After the opportunity is visible, require the EA to create or select the appropriate engagement and maintain its technical definition, progress, status, blockers, and artifacts until the opportunity closes or the technical effort ends.
+When a verified Oracle Sales opportunity is missing from DTC, first offer the user a guided DTC-record creation path or a draft email to the owning Cloud Sales representative/CPR. Permit DTC-record creation only when the source opportunity's revenue amount is greater than zero; otherwise do not create the DTC record and explain the failed eligibility check. Preserve the Sales opportunity as the commercial source of truth. After the DTC record is visible, guide the user to create or select the appropriate EA engagement and maintain its technical definition, progress, status, blockers, and artifacts until the opportunity closes or the technical effort ends.
 
 Do not remove old opportunity links just because a newer opportunity is active. Treat old/closed links as historical context unless the user confirms removal.
 

@@ -57,8 +57,9 @@ Before committing a skill behavior change, confirm:
 - Invocation confirms the in-app browser-control capability, at least one controllable browser tab in the current Codex environment, an authenticated DTC-Nexus home page, and one allowed engagement search hint before searching.
 - Invocation activates and verifies the `tools-311` Python environment and required libraries before browser work.
 - The workflow preserves EA versus sales role boundaries.
-- Missing opportunities are escalated to the owning Sales/CPR with the DTC link and complete initiation instructions; the EA never fabricates a replacement opportunity.
-- The EA lifecycle remains explicit: create or select the technical engagement after Sales initiation, then maintain it until the opportunity closes or the effort ends.
+- A missing opportunity presents the user with DTC-record creation or a Sales/CPR email path; DTC creation is allowed only from a verified Oracle Sales opportunity with revenue greater than zero.
+- The DTC record preserves the source opportunity and Sales-owned values; the EA never fabricates a replacement sales opportunity.
+- The EA lifecycle remains explicit: create or select the technical engagement after the DTC opportunity record is visible, then maintain it until the opportunity closes or the effort ends.
 - The update language does not make unsupported claims.
 - Missing or unclear Nexus data is stated plainly.
 - Only the intended engagement fields are updated.

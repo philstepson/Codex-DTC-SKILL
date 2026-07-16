@@ -20,7 +20,7 @@ Recommended source/segment choices depend on the facts:
 - Use `Multicloud Driven` for Azure/Google/AWS-connected Oracle architecture.
 - Use `Data Platform (Non AI) Driven`, `DB Driven`, `Hardware Driven`, or other segments only when they better match the primary customer driver.
 
-Stage fields first. Ask before clicking `Save`.
+The creation form may require a non-empty engagement description before it will accept `Create`. Use a concise, factual scope statement and do not make unsupported customer-validation, production, or deployment claims. Stage fields first. Ask before clicking `Save` or `Create`.
 
 ## Opportunity Links
 
@@ -45,14 +45,22 @@ Confirm with the user before clicking `Add Opportunity "<opp_id>" Link`. After a
 
 Do not remove old closed opportunities unless the user explicitly asks. Historical links can remain for continuity.
 
-### Missing Opportunity Escalation
+### Missing Opportunity: Create DTC Record Or Escalate
 
 When an exact opportunity ID is not visible in DTC:
 
-1. Verify the opportunity directly in Oracle Sales and capture its account, title, status/stage, owning Cloud Sales representative/CPR, and owner email.
+1. Verify the opportunity directly in Oracle Sales and capture its exact ID, account, title, status/stage, owning Cloud Sales representative/CPR, owner email, and revenue amount.
 2. Recheck the DTC opportunity-link drawer using the exact opportunity ID, the correct focused account, `Limit to Open / Won / Pending: Yes`, `Limit to Valid Opps: Yes`, and the appropriate registry/global-ultimate scope.
-3. If it is still absent, stop the link attempt. Do not create a replacement opportunity or attach a different opportunity.
-4. Draft an email to the owning Sales representative/CPR using this pattern:
+3. If it is still absent, present these options before drafting or sending any email:
+   - **Create DTC opportunity record** — available only if the verified source opportunity has a revenue amount greater than `0`.
+   - **Draft email to Sales/CPR** — use when the user prefers Sales to resolve or initiate the DTC record.
+4. If the user chooses to create the DTC record, guide them through the app's available create/add action:
+   1. Restate the source opportunity ID, account, sales owner, and revenue amount; explicitly confirm that the amount is greater than `0`.
+   2. Select the source Oracle Sales opportunity rather than entering a substitute or free-form opportunity.
+   3. Carry forward the source opportunity ID, account/registry, sales owner, and revenue information exactly as shown. Do not change sales-owned territory, owner, stage, forecast, or revenue values.
+   4. Save only after action-time confirmation. If the app does not expose a create/add action or the revenue amount is missing, zero, or negative, do not create the DTC record; explain why and offer the Sales/CPR email option.
+   5. Reopen the opportunity-link drawer and verify that the new DTC record is discoverable under the exact source opportunity ID. Then guide the EA to create or select the engagement and link that DTC opportunity.
+5. If the user chooses the Sales/CPR path, draft an email using this pattern:
 
 ```text
 Subject: Action needed: Add opportunity <opp_id> to Nexus DTC Execute
@@ -73,10 +81,10 @@ Engagement owner: <engagement_owner_if_known>
 Please open Opportunity Review, search for the exact opportunity ID, confirm the Oracle Sales account/registry and Data Platform territory assignments, allow the integration to synchronize if corrections are needed, and pre-connect or link the opportunity. Please notify the EA when it is visible and linked.
 ```
 
-5. Obtain action-time confirmation before sending the email.
-6. Leave the DTC workflow staged without fabricating a successful link. Resume after Sales/CPR confirms the opportunity is visible.
-7. Once visible, have the EA create or select the appropriate engagement, link the opportunity, and maintain the technical engagement until the opportunity closes or the effort ends.
-8. Prefer updating and sending the reviewed Outlook draft. If the connector cannot update or delete a superseded draft, send the approved corrected message and explicitly identify the stale draft for manual deletion.
+6. Obtain action-time confirmation before sending the email.
+7. Leave the DTC workflow staged without fabricating a successful link. Resume after Sales/CPR confirms the opportunity is visible.
+8. Once visible, have the EA create or select the appropriate engagement, link the opportunity, and maintain the technical engagement until the opportunity closes or the effort ends.
+9. Prefer updating and sending the reviewed Outlook draft. If the connector cannot update or delete a superseded draft, send the approved corrected message and explicitly identify the stale draft for manual deletion.
 
 ## Progress And Milestones
 
@@ -109,6 +117,12 @@ Ask before clicking `Apply Changes`. After applying, verify `# Hit`, `% Hit`, en
 ## Milestone Log
 
 `Edit Milestone Log` opens page 69. This is primarily an audit/grid surface. It may allow logged date/comment edits, but it is not the primary place for broad current status. Prefer the progress checklist for milestone truth and artifacts/status comments for narrative details.
+
+## Status Comments And Heat
+
+Open `Engagement Comments` from the engagement heat-status cell to add a factual technical update. Select the applicable comment group, such as `Technical (TECHNICAL)`, then ask before clicking `Apply`.
+
+The app can automatically set a new or recently updated engagement to Yellow. Treat this as app-visible engagement heat, not proof of a technical blocker. Record blockers separately only when a real unresolved impediment exists.
 
 ## Artifacts And Blockers
 

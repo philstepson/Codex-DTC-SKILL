@@ -34,9 +34,9 @@ Use the Nexus DTC Execute skill to update this engagement from the in-app browse
 
 On invocation, the skill first confirms both that browser control is available and that this specific Codex invocation exposes a controllable browser tab. An installed plugin alone is not enough—CLI sessions can have zero browser targets. Only after the tab is authenticated and open on the DTC-Nexus home page does the skill ask for one engagement search hint: an Engagement ID, Opportunity ID, SR number, or Account / customer name.
 
-The skill covers Python dependency preflight, authenticated in-app or explicitly approved Chrome handoff, browser navigation, EA versus Sales/CPR ownership boundaries, opportunity linking, missing-opportunity email escalation, progress milestones, status wording, and verification after writes.
+The skill covers Python dependency preflight, authenticated in-app or explicitly approved Chrome handoff, browser navigation, EA versus Sales/CPR ownership boundaries, opportunity linking, guided missing-DTC-opportunity creation, progress milestones, status wording, and verification after writes.
 
-When an opportunity is missing from DTC, the owning Cloud Sales representative/CPR initiates the process by correcting account/registry and Data Platform territory assignments as needed and pre-connecting the opportunity. The EA then creates or selects the technical engagement and maintains it until the opportunity closes or the effort ends.
+When a verified Oracle Sales opportunity is missing from DTC, the skill offers a choice to create its DTC record or draft an email to the Sales owner. It permits creation only when the source opportunity's revenue amount is greater than zero, preserves Sales-owned values, verifies the new DTC record is discoverable, and then guides creation or selection of the EA engagement.
 
 ## Collaboration
 
